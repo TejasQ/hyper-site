@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/Layout.js'
-import Footer from '../components/Footer.js'
 import Head from 'next/head'
 import DownloadButton from '../components/DownloadButton.js'
 
@@ -1933,7 +1932,6 @@ export default class Index extends React.Component {
           </div>
         </div>
 
-        <Footer />
 
         <style jsx>{`
           :global(body) {

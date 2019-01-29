@@ -1,5 +1,7 @@
 import React from 'react'
 import { withRouter } from 'next/router'
+
+import Footer from './Footer'
 import Meta from './Meta'
 import Header from './Header'
 import SearchList from './SearchList'
@@ -84,6 +86,8 @@ class Layout extends React.Component {
         ) : (
           <div className="page">{this.props.children}</div>
         )}
+
+        <Footer />
       </div>
     )
   }

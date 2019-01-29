@@ -28,7 +28,19 @@ class Blog extends React.Component {
             .content {
               max-width: 650px;
             }
-
+            .content :global(h1) {
+              text-align: center;
+              margin: 64px auto 32px;
+              font-size: 3em;
+            }
+            .content :global(h3) {
+              margin: 32px 0 16px;
+            }
+            .content :global(.date) {
+              text-align: center;
+              color: #737373;
+              font-size: 0.9em;
+            }
             .content :global(p) {
               font-size: 14px;
               line-height: 24px;

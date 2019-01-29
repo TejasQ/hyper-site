@@ -38,7 +38,8 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-gravatar": "^2.6.3",
-    "react-highlighter": "^0.4.3"
+    "react-highlighter": "^0.4.3",
+    "react-tweet-embed": "^1.1.1"
   },
   "devDependencies": {
     "husky": "^1.2.0",

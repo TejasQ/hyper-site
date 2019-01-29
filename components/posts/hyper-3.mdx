@@ -1,3 +1,4 @@
+import Tweet from '../Tweet'
 import DownloadButton from '../DownloadButton.js'
 import Caption from '../Caption.js'
 import Contributors from '../Contributors.js'
@@ -80,8 +81,22 @@ canvas-based renderer – which is _much_ faster. For Hyper 3, we knew it was
 possible to make it faster by rewriting the renderer using
 [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API).
 
+<Tweet
+  caption={
+    <>
+      A tweet by{' '}
+      <a target="_blank" href="https://github.com/tyriar">
+        tyriar
+      </a>{' '}
+      outlining WebGL-rendered xterm.js.
+    </>
+  }
+  id="1064932797016489984"
+  options={{ theme: 'dark' }}
+/>
+
 By a fortunate coincidence, as we were figuring out how to build such a thing,
-[@tyriar](https://github.com/tyriar) (from xterm.js and VSCode), [was coming back from a "vacation"](https://twitter.com/Tyriar/status/1064932797016489984) where he
+**@tyriar** (from xterm.js and VSCode), was coming back from a "vacation" where he
 happened to be writing a shiny new WebGL
 renderer (open source
 is amazing ❤). We promptly merged @tyriar's branch onto a test fork, and well,
@@ -115,8 +130,10 @@ In these profiles, it's easy to see the difference between v2 and v3.
   <img src="../../static/batching.svg" />
 </div>
 
-The pink segments represent the time spent processing IPC, instead of parsing
-or rendering.
+<Caption>
+  The pink segments represent the time spent processing IPC, instead of parsing
+  or rendering.
+</Caption>
 
 [Electron](https://electronjs.org/), being Chromium based, uses a multi-process architecture where each
 window runs on its own separate process called a "renderer" process.
@@ -200,6 +217,7 @@ messages](https://gitmoji.carloscuesta.me/) for example.
     `}
   </style>
 </div>
+<Caption>Emoji support in Hyper 3</Caption>
 
 ## Road Ahead
 

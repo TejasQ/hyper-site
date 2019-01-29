@@ -4,8 +4,8 @@ const contributorAvatarSize = 32
 const Contributors = ({ people }) => (
   <ul>
     {people.map(({ name, link, photoURL }) => (
-      <a href={link} target="_blank">
-        <div className="contributor" key={link}>
+      <a key={link} href={link} target="_blank">
+        <div className="contributor">
           <div
             className="avatar"
             style={{ backgroundImage: `url(${photoURL})` }}
@@ -27,6 +27,7 @@ const Contributors = ({ people }) => (
           display: flex;
           align-items: center;
           flex-wrap: wrap;
+          font-size: 0.9em;
         }
         .contributor {
         }

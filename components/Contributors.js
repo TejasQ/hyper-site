@@ -18,7 +18,7 @@ const Contributors = ({ people }) => (
     <style jsx>
       {`
         ul {
-          margin: 64px auto;
+          margin: 64px auto 32px;
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           grid-gap: 16px;

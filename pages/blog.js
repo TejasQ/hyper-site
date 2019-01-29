@@ -12,7 +12,7 @@ class Blog extends React.Component {
           <title>Hyper Blog</title>
         </Head>
         <div className="container">
-          <div className="content">
+          <div className="blog-content">
             <Hyper3 />
           </div>
         </div>
@@ -25,23 +25,28 @@ class Blog extends React.Component {
               position: relative;
               max-width: 650px;
             }
-            .content {
+            .blog-content {
               max-width: 650px;
+              width: 100%;
             }
-            .content :global(h1) {
+            .blog-content :global(h1) {
               text-align: center;
               margin: 64px auto 32px;
               font-size: 3em;
+              line-height: 1;
             }
-            .content :global(h3) {
+            .blog-content :global(h3) {
               margin: 32px 0 16px;
             }
-            .content :global(.date) {
+            .blog-content :global(.date) {
               text-align: center;
               color: #737373;
               font-size: 0.9em;
             }
-            .content :global(p) {
+            .blog-content :global(img) {
+              max-width: 100%;
+            }
+            .blog-content :global(p) {
               font-size: 14px;
               line-height: 24px;
               margin: 0 0 20px;

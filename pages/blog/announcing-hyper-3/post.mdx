@@ -1,20 +1,19 @@
-import Tweet from '../Tweet'
-import DownloadButton from '../DownloadButton.js'
-import Caption from '../Caption.js'
-import Contributors from '../Contributors.js'
-import {
-  onecamp,
-  tyriar,
-  jerch,
-  stanzilla,
-  chabou,
-  tejaskumar
-} from '../../data/contributors.js'
+import Head from 'next/head'
+
+import Tweet from '../../../components/Tweet'
+import DownloadButton from '../../../components/DownloadButton.js'
+import Caption from '../../../components/Caption.js'
+import Contributors from '../../../components/Contributors.js'
+import { date, contributors, title } from './meta'
 
 # Announcing Hyper 3
 
+<Head>
+  <title>Hyper Blog | {title}</title>
+</Head>
+
 <div className="date">
-  {new Date('2019-01-29T21:15:32.730Z').toLocaleString('en-US', {
+  {new Date(date).toLocaleString('en-US', {
     timeZone: 'Europe/Berlin',
     weekday: 'long',
     year: 'numeric',
@@ -25,9 +24,7 @@ import {
   })}
 </div>
 
-<Contributors
-  people={[onecamp, tyriar, jerch, stanzilla, chabou, tejaskumar]}
-/>
+<Contributors people={contributors} />
 
 **Hyper 3 is finally out!** and the main theme for this release is
 **performance**. To try it out, download it below. Read on to learn what's in
@@ -60,7 +57,7 @@ release is a game changer.
   <div>Hyper v3</div>
 </div>
 
-<video id="vid" src="static/v2-vs-v3.mp4" width="100%" autoPlay loop muted />
+<video id="vid" src="/static/v2-vs-v3.mp4" width="100%" autoPlay loop muted />
 <Caption>A video demonstrating a significant difference in performance between Hyper v2 and v3</Caption>
 
 An interesting thing about this release is that it took a relatively short time

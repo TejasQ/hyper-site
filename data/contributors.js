@@ -1,6 +1,6 @@
 module.exports = {
-  onecamp: {
-    name: 'onecamp',
+  juancampa: {
+    name: 'juancampa',
     link: 'https://github.com/onecamp',
     photoURL: 'https://avatars0.githubusercontent.com/u/1410520?s=460&v=4'
   },

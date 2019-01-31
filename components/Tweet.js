@@ -7,11 +7,16 @@ const Tweet = ({ caption, ...props }) => (
     <Caption>{caption}</Caption>
     <style jsx>{`
       div {
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 32px auto 0;
+      }
+      @media (min-width: 768px) {
+        div {
+          display: flex;
+        }
       }
     `}</style>
   </div>

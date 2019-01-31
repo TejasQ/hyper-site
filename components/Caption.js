@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Caption = ({ children }) => (
+const Caption = ({ children, left }) => (
   <small>
     {children}
     <style jsx>
@@ -9,7 +9,7 @@ const Caption = ({ children }) => (
           color: #666;
           font-size: 0.9em;
           margin: 4px auto 32px;
-          text-align: center;
+          text-align: ${left ? 'left' : 'center'};
           display: block;
         }
       `}

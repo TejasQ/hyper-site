@@ -1,8 +1,8 @@
 import React from 'react'
 
 const contributorAvatarSize = 32
-const Contributors = ({ people }) => (
-  <ul>
+const Contributors = ({ compact, people }) => (
+  <ul className={compact ? 'compact' : ''}>
     {people.map(({ name, link, photoURL }) => (
       <a key={link} href={link} target="_blank">
         <div className="contributor">
@@ -23,6 +23,13 @@ const Contributors = ({ people }) => (
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           grid-gap: 16px;
+        }
+        ul.compact {
+          display: flex;
+          margin: 0 0 16px;
+        }
+        ul.compact > a + a {
+          margin-left: 16px;
         }
         .contributor {
           align-items: center;

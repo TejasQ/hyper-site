@@ -69,6 +69,7 @@ export default class Header extends React.Component {
         <nav className="header__mobile-nav container">
           <ActiveLink href="/plugins">Plugins</ActiveLink>
           <ActiveLink href="/themes">Themes</ActiveLink>
+          <ActiveLink href="/blog">Blog</ActiveLink>
           <a
             href="https://github.com/zeit/hyper-plugins/wiki/Submitting-a-new-plugin-or-theme-to-Hyper-Store"
             target="_blank"

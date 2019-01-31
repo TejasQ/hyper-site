@@ -1,7 +1,7 @@
 module.exports = {
   juancampa: {
     name: 'juancampa',
-    link: 'https://github.com/onecamp',
+    link: 'https://github.com/juancampa',
     photoURL: 'https://avatars0.githubusercontent.com/u/1410520?s=460&v=4'
   },
   tyriar: {
